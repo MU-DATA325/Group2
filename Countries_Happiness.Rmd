@@ -5,7 +5,7 @@ output: html_document
 ---
 https://www.kaggle.com/unsdsn/world-happiness?select=2019.csv
 Section 1:
-Can happiness be related to whole countries?
+Research Question: Can happiness be related to whole countries?
 We got the data from Kaggle. The data was collected from the United Nations at an event celebrating International Day of Happiness on March 20th. 
 Cases:
 -Country (156)
@@ -24,7 +24,7 @@ Variables:
  
 Section 2:
 (we need help)
- 
+ Dimensions = 156  8
  
  
  
