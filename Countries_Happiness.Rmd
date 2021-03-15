@@ -5,7 +5,7 @@ output: html_document
 ---
 https://www.kaggle.com/unsdsn/world-happiness?select=2019.csv
 Section 1:
-Can happiness be related to whole countries?
+Research Question: Can happiness be related to whole countries?
 We got the data from Kaggle. The data was collected from the United Nations at an event celebrating International Day of Happiness on March 20th. 
 Cases:
 -Country (156)
@@ -24,11 +24,18 @@ Variables:
  
 Section 2:
 
+
+<<<<<<< HEAD
+
 | hotel                          | character | Hotel (H1 = Resort Hotel or H2 = City Hotel) 
 
 | overall rank               | character | Rank (OR1 = Rank) 
 
 | Country or region      | character | Country (C1 = Country or R1= Region)                                                                     
+=======
+(we need help)
+ Dimensions = 156  8
+>>>>>>> a18e9fc6ad2cd9382b67e5a68866883bd3c9e9a4
  
  
  
@@ -54,6 +61,7 @@ A regression model will explain the relationship between the dependent variable 
 
 We will pick a sample from the large data we collected. There are 156 countries we could analyze but we will determine the right size of the sample to come up with accurate results and data. We will calculate the standard deviation for each of the variables and utilize the set of data where it is more consistent or where the data is statistically significant.
  ```
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
