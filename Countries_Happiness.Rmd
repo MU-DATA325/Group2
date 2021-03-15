@@ -23,8 +23,12 @@ Variables:
 -Perceptions of corruption
  
 Section 2:
-(we need help)
- 
+
+| hotel                          | character | Hotel (H1 = Resort Hotel or H2 = City Hotel) 
+
+| overall rank               | character | Rank (OR1 = Rank) 
+
+| Country or region      | character | Country (C1 = Country or R1= Region)                                                                     
  
  
  
