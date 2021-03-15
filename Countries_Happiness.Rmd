@@ -1,4 +1,5 @@
 ---
+author: "Jim Andrade , Miriam Amaya, Giselle Camacho, Kevin Huang"
 title: "Countries_Happiness"
 output: html_document
 ---
@@ -27,8 +28,8 @@ summary(happiness)
 
 You can also embed plots, for example:
 
-```{r, echo=FALSE}
-ggplot(happiness) +
+```{r, eval=FALSE}
+
   
 ```
 
