@@ -31,7 +31,19 @@ Section 2:
 
 | overall rank               | character | Rank (OR1 = Rank) 
 
-| Country or region      | character | Country (C1 = Country or R1= Region)                                                                     
+| Country or region      | character | Country (C1 = Country or R1= Region)              
+
+Social support
+-capita
+-Healthy life expectancy
+ 
+-Freedom to make life choices
+ 
+-Generosity
+ 
+-Perceptions of corruption
+
+
 =======
 (we need help)
  Dimensions = 156  8
