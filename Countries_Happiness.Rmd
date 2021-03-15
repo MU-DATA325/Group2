@@ -25,21 +25,24 @@ Variables:
 Section 2:
 Dimensions = 156  8
 
-| hotel                          | character | Hotel (H1 = Resort Hotel or H2 = City Hotel) 
-
 | overall rank               | character | Rank (OR1 = Rank) 
 
-| Country or region      | character | Country (C1 = Country or R1= Region)              
+| country or region      | character | Country (C1 = Country or R1= Region)  
 
-Social support
--capita
--Healthy life expectancy
+| Social support      | character | Support (SS = Social Support)
+
+| capita            | character | Capita (C1 = GDP per capita)
+
+| life expectancy         | character | Health (LE1 = GDP Healthy life expectancy)
+
+| freedom         | character | Freedom to make life choices
+  (F1 = Freedom)
+
+| generosity       | character | Generosity (G1 = Generosity)
  
--Freedom to make life choices
+| corruption       | character | Corruption (PC1 = Perceptions of corruption)
  
--Generosity
- 
--Perceptions of corruption
+
 
 
 =======
