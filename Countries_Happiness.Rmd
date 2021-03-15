@@ -23,9 +23,7 @@ Variables:
 -Perceptions of corruption
  
 Section 2:
-
-
-<<<<<<< HEAD
+Dimensions = 156  8
 
 | hotel                          | character | Hotel (H1 = Resort Hotel or H2 = City Hotel) 
 
@@ -45,9 +43,9 @@ Social support
 
 
 =======
-(we need help)
- Dimensions = 156  8
->>>>>>> a18e9fc6ad2cd9382b67e5a68866883bd3c9e9a4
+
+ 
+
  
  
  
