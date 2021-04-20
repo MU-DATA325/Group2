@@ -86,6 +86,7 @@ happiness <- read_csv("data/2019.csv")
 summary(happiness)
 ```
 
+
 ## Including Plots
 
 You can also embed plots, for example:
