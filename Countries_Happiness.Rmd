@@ -15,11 +15,8 @@ Variables:
 -Score
 -capita
 -Healthy life expectancy
- 
 -Freedom to make life choices
- 
 -Generosity
- 
 -Perceptions of corruption
  
 Section 2:
@@ -69,6 +66,7 @@ We will pick a sample from the large data we collected. There are 156 countries 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 ```{r}
 library(tidyverse)
 library(skimr)
@@ -94,8 +92,7 @@ glimpse(happiness)
 You can also embed plots, for example:
 
 ```{r}
-ggplot(data = happiness, mapping = aes(x = "perception_of_corruption")) + 
-geom_point()
+ggplot(data = happiness, mapping = aes(x = "Perception_of_corruption", y = "Score")) + geom_point()
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
