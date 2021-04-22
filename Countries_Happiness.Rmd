@@ -27,15 +27,15 @@ Dimensions = 156  8
 
 ## Data Dictionary
 
-| overall rank               | character | Rank (OR1 = Rank) 
+| overall_rank               | character | Rank (OR1 = Rank) 
 
-| country or region      | character | Country (C1 = Country or R1= Region)  
+| country_or_region      | character | Country (C1 = Country or R1= Region)  
 
-| social support      | character | Support (SS = Social Support)
+| social_support      | character | Support (SS = Social Support)
 
 | capita            | character | Capita (C1 = GDP per capita)
 
-| life expectancy         | character | Health (LE1 = Healthy life expectancy)
+| life_expectancy         | character | Health (LE1 = Healthy life expectancy)
 
 | freedom         | character | Freedom to make life choices
   (F1 = Freedom)
@@ -84,6 +84,7 @@ happiness <- read_csv("data/2019.csv")
 
 ```{r}
 summary(happiness)
+glimpse(happiness)
 ```
 
 
@@ -91,9 +92,9 @@ summary(happiness)
 
 You can also embed plots, for example:
 
-```{r, eval=FALSE}
-
-  
+```{r}
+ggplot(data = happiness, mapping = aes(x = "perception_of_corruption")) + 
+geom_histogram()
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
