@@ -92,7 +92,8 @@ glimpse(happiness)
 You can also embed plots, for example:
 
 ```{r}
-ggplot(data = happiness, mapping = aes(x = Score, y = Perceptions_of_corruption)) + geom_point()
+ggplot(data = happiness, mapping = aes(x = Score, y = Perceptions_of_corruption)) + 
+geom_point()
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
