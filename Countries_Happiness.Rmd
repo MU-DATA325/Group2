@@ -93,7 +93,7 @@ names(happiness)
 You can also embed plots, for example:
 
 ```{r}
-ggplot(data = happiness, mapping = aes(x = Score, y = Perceptions_of_corruption, fill = Generosity)) + 
+ggplot(data = happiness, mapping = aes(x = Score, y = Perceptions_of_corruption)) + 
 geom_point()
 ```
 
