@@ -100,7 +100,7 @@ geom_point() +
 
 ![plot of chunk unnamed-chunk-6](Presentation-figure/unnamed-chunk-6-1.png)
 
-Diving into the data
+Top 5 Overall Rank
 ========================================================
 
 ```r
@@ -114,4 +114,3 @@ ggplot(data = top_five_rank, mapping = aes(x = Country_or_region, y = Overall_ra
 ```
 
 ![plot of chunk unnamed-chunk-8](Presentation-figure/unnamed-chunk-8-1.png)
-

@@ -66,7 +66,7 @@ geom_point() +
        x = "Score", y = "Perception of Corruption")
 ```
 
-Diving into the data
+Top 5 Overall Rank
 ========================================================
 ```{r echo=TRUE}
 top_five_rank <- happiness %>%
@@ -76,4 +76,3 @@ top_five_rank <- happiness %>%
 ggplot(data = top_five_rank, mapping = aes(x = Country_or_region, y = Overall_rank)) +
          geom_point()
 ```
-
