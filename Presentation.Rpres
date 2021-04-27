@@ -1,0 +1,62 @@
+Happiness Presentation
+========================================================
+author: Jim  Andrade,  Miriam  Amaya,  Giselle  Camacho,  Kevin  Huang (Group 2)
+date: April 29th, 2021
+autosize: true
+
+Introduction
+========================================================
+
+
+We found our data from Kaggle and is from 2019. The data was collected from the United Nations at an event celebrating International Day of Happiness on March 20th
+
+The reason why we choose this data because: 
+
+- We wanted to see the world's happiness from each country.
+
+
+- What factors influence the levels of happiness.
+
+
+- This set of data gave us a lot of variables to compare.
+
+
+Research Question: What factors in countries are related to happiness?
+
+Packages Used
+========================================================
+We loaded up the packages tidyverse and skimr, as its seen below:
+
+```{r}
+library(tidyverse)
+library(skimr)
+```
+After using these packages, we are able to upload dataset to R by using read_csv:
+```{r}
+happiness <- read_csv("data/2019.csv")
+```
+
+Now, looking into the data
+========================================================
+names(happiness)
+```{r echo=TRUE}
+names(happiness)
+```
+Cont. of Data
+========================================================
+glimpse(happiness)
+```{r}
+glimpse(happiness)
+```
+
+Diving into the data
+========================================================
+First, we will look into the relationship of the score variable and the perception of corruption.
+```{r}
+ggplot(data = happiness, mapping = aes(x = Score, y = Perceptions_of_corruption)) + 
+geom_point() +
+  labs(title = "Score and Perception of Corruption",
+       subtite = "Relationship between Score and Perception of Corruption",
+       x = "Score", y = "Perception of Corruption")
+```
+
