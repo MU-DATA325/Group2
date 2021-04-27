@@ -83,7 +83,7 @@ First, we will look into the relationship of the score variable and the percepti
 ggplot(data = happiness, mapping = aes(x = Score, y = Perceptions_of_corruption)) + 
 geom_point() +
   labs(title = "Score and Perception of Corruption",
-       subtite = "Relationship between Score and Perception of Corruption",
+       subtitle = "Relationship between Score and Perception of Corruption",
        x = "Score", y = "Perception of Corruption")
 ```
 
