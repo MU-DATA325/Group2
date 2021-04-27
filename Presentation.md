@@ -40,6 +40,16 @@ happiness <- read_csv("data/2019.csv")
 
 Now, looking into the data
 ========================================================
+The Dimensions are: 
+
+```r
+dim(happiness)
+```
+
+```
+[1] 156   9
+```
+
 names(happiness)
 
 ```r
@@ -75,6 +85,7 @@ $ Generosity                   <dbl> 0.153, 0.252, 0.271, 0.354, 0.322, 0.263…
 $ Perceptions_of_corruption    <dbl> 0.393, 0.410, 0.341, 0.118, 0.298, 0.343…
 ```
 
+
 Diving into the data
 ========================================================
 First, we will look into the relationship of the score variable and the perception of corruption.
@@ -87,5 +98,20 @@ geom_point() +
        x = "Score", y = "Perception of Corruption")
 ```
 
-![plot of chunk unnamed-chunk-5](Presentation-figure/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-6](Presentation-figure/unnamed-chunk-6-1.png)
+
+Diving into the data
+========================================================
+
+```r
+top_five_rank <- happiness %>%
+  filter(Overall_rank < 6)
+```
+
+```r
+ggplot(data = top_five_rank, mapping = aes(x = Country_or_region, y = Overall_rank)) +
+         geom_point()
+```
+
+![plot of chunk unnamed-chunk-8](Presentation-figure/unnamed-chunk-8-1.png)
 
