@@ -82,7 +82,6 @@ happiness <- read_csv("data/2019.csv")
 ```
 
 ```{r}
-summary(happiness)
 glimpse(happiness)
 names(happiness)
 ```
@@ -95,7 +94,9 @@ You can also embed plots, for example:
 ```{r}
 ggplot(data = happiness, mapping = aes(x = Score, y = Perceptions_of_corruption)) + 
 geom_point() +
-labs(title = "Relationship between Score and Perception of Corruption")
+  labs(title = "Score and Perception of Corruption",
+       subtite = "Relationship between Score and Perception of Corruption",
+       x = "Score", y = "Perception of Corruption")
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
