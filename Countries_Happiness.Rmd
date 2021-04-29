@@ -100,3 +100,40 @@ geom_point() +
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r echo=TRUE}
+top_five_rank <- happiness %>%
+  filter(Overall_rank < 6)
+```
+```{r echo=TRUE}
+ggplot(data = top_five_rank, mapping = aes(x = Country_or_region, y = Overall_rank)) +
+         geom_point() +
+  labs(title = "Top Five Ranked Countries",
+       x = "Country", y = "Rank")
+```
+
+```{r echo=TRUE}
+last_five_rank <- happiness %>%
+  filter(Overall_rank > 151)
+```
+```{r echo=TRUE}
+ggplot(data = last_five_rank, mapping = aes(x = Country_or_region, y = Overall_rank)) +
+         geom_point() +
+  labs(title = "Last Five Ranked Countries",
+       x = "Country", y = "Rank")
+```
+
+```{r echo=TRUE}
+ggplot(data = happiness, mapping = aes(x = Score, y = Perceptions_of_corruption)) + 
+geom_point() +
+  labs(title = "Score and Perception of Corruption",
+       subtitle = "Relationship between Score and Perception of Corruption",
+       x = "Score", y = "Perception of Corruption")
+```
+
+```{r echo=TRUE}
+ggplot(data = happiness, mapping = aes(x = Score, y = GDP_per_capita)) + 
+geom_point() +
+  labs(title = "Score and GDP per Capita", subtite = "Relationship between Score and GDP Per Capita",
+    x = "Score", y = "GDP per Capita")
+
+```
