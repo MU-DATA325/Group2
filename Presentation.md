@@ -175,3 +175,9 @@ Summary
 - The higher the score of happiness on the data of the countries, the higher levels of absence of corruption was seen from the data.
 - Based from the data of the ranks of the countries, the top 5 countries were countries from Europe, while the last 5 countries were third world countries.
 - Based from the data on GDP per Capita and score, we see that the higher the GDP per Capita, the higher the score of happiness was seen. 
+
+THE END
+========================================================
+Thank You!
+
+Any Questions?
