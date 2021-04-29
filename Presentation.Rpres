@@ -53,7 +53,14 @@ glimpse(happiness)
 ```{r}
 glimpse(happiness)
 ```
+Defining Variables
+========================================================
 
+# Score
+
+-Sum of the results of all variables
+
+-The Higher the score the happier the country
 
 Diving into the data
 ========================================================
@@ -117,14 +124,7 @@ geom_point() +
 
 ```
 
-Defining Variables
-========================================================
 
-# Score
-
--Sum of the results of all variables
-
--The Higher the score the happier the country
 
 Summary
 ========================================================

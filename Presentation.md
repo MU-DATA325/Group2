@@ -84,7 +84,14 @@ $ Freedom_to_make_life_choices <dbl> 0.596, 0.592, 0.603, 0.591, 0.557, 0.572…
 $ Generosity                   <dbl> 0.153, 0.252, 0.271, 0.354, 0.322, 0.263…
 $ Perceptions_of_corruption    <dbl> 0.393, 0.410, 0.341, 0.118, 0.298, 0.343…
 ```
+Defining Variables
+========================================================
 
+# Score
+
+-Sum of the results of all variables
+
+-The Higher the score the happier the country
 
 Diving into the data
 ========================================================
@@ -161,14 +168,7 @@ geom_point() +
 
 ![plot of chunk unnamed-chunk-11](Presentation-figure/unnamed-chunk-11-1.png)
 
-Defining Variables
-========================================================
 
-# Score
-
--Sum of the results of all variables
-
--The Higher the score the happier the country
 
 Summary
 ========================================================
