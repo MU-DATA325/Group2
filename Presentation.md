@@ -93,22 +93,6 @@ Defining Variables
 
 -The Higher the score the happier the country
 
-Diving into the data
-========================================================
-# Score and Perception of Corruption (Absense of Corruption)
-### Hypothesis: The Higher the Score, the Higher the Perceptions of Corruption.
-Now, we will look into the relationship of the score variable and the perception of corruption.
-
-
-```r
-ggplot(data = happiness, mapping = aes(x = Score, y = Perceptions_of_corruption)) + 
-geom_point() +
-  labs(title = "Score and Perception of Corruption",
-       subtitle = "Relationship between Score and Perception of Corruption",
-       x = "Score", y = "Perception of Corruption")
-```
-
-![plot of chunk unnamed-chunk-6](Presentation-figure/unnamed-chunk-6-1.png)
 
 Diving into the data
 ========================================================
@@ -127,7 +111,7 @@ ggplot(data = top_five_rank, mapping = aes(x = Country_or_region, y = Overall_ra
        x = "Country", y = "Rank")
 ```
 
-![plot of chunk unnamed-chunk-8](Presentation-figure/unnamed-chunk-8-1.png)
+![plot of chunk unnamed-chunk-7](Presentation-figure/unnamed-chunk-7-1.png)
 Diving into the data
 ========================================================
 # The Last Five Ranked Countries in Happiness
@@ -143,6 +127,22 @@ ggplot(data = last_five_rank, mapping = aes(x = Country_or_region, y = Overall_r
          geom_point() +
   labs(title = "Last Five Ranked Countries",
        x = "Country", y = "Rank")
+```
+
+![plot of chunk unnamed-chunk-9](Presentation-figure/unnamed-chunk-9-1.png)
+Diving into the data
+========================================================
+# Score and Perception of Corruption (Absense of Corruption)
+### Hypothesis: The Higher the Score, the Higher the Perceptions of Corruption.
+Now, we will look into the relationship of the score variable and the perception of corruption.
+
+
+```r
+ggplot(data = happiness, mapping = aes(x = Score, y = Perceptions_of_corruption)) + 
+geom_point() +
+  labs(title = "Score and Perception of Corruption",
+       subtitle = "Relationship between Score and Perception of Corruption",
+       x = "Score", y = "Perception of Corruption")
 ```
 
 ![plot of chunk unnamed-chunk-10](Presentation-figure/unnamed-chunk-10-1.png)
