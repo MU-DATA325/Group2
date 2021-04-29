@@ -17,7 +17,7 @@ Variables:
 -Healthy life expectancy
 -Freedom to make life choices
 -Generosity
--Perceptions of corruption
+-Perceptions of corruption (absense of corruption)
  
 Section 2:
 Dimensions = 156  8

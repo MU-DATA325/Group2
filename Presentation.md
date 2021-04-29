@@ -88,7 +88,10 @@ $ Perceptions_of_corruption    <dbl> 0.393, 0.410, 0.341, 0.118, 0.298, 0.343…
 
 Diving into the data
 ========================================================
-First, we will look into the relationship of the score variable and the perception of corruption.
+# Score and Perception of Corruption (Absense of Corruption)
+### Hypothesis: The Higher the Score, the Higher the Perceptions of Corruption.
+Now, we will look into the relationship of the score variable and the perception of corruption.
+
 
 ```r
 ggplot(data = happiness, mapping = aes(x = Score, y = Perceptions_of_corruption)) + 
@@ -100,8 +103,10 @@ geom_point() +
 
 ![plot of chunk unnamed-chunk-6](Presentation-figure/unnamed-chunk-6-1.png)
 
-Top 5 Overall Rank
+Diving into the data
 ========================================================
+# The Top Five Ranked Countries in Happiness
+### Hypothesis: The top 5 coutries will come from the European region.
 
 ```r
 top_five_rank <- happiness %>%
@@ -110,7 +115,63 @@ top_five_rank <- happiness %>%
 
 ```r
 ggplot(data = top_five_rank, mapping = aes(x = Country_or_region, y = Overall_rank)) +
-         geom_point()
+         geom_point() +
+  labs(title = "Top Five Ranked Countries",
+       x = "Country", y = "Rank")
 ```
 
 ![plot of chunk unnamed-chunk-8](Presentation-figure/unnamed-chunk-8-1.png)
+Diving into the data
+========================================================
+# The Last Five Ranked Countries in Happiness
+### Hypothesis: The last five countries will come from third world countries. 
+
+```r
+last_five_rank <- happiness %>%
+  filter(Overall_rank > 151)
+```
+
+```r
+ggplot(data = last_five_rank, mapping = aes(x = Country_or_region, y = Overall_rank)) +
+         geom_point() +
+  labs(title = "Last Five Ranked Countries",
+       x = "Country", y = "Rank")
+```
+
+![plot of chunk unnamed-chunk-10](Presentation-figure/unnamed-chunk-10-1.png)
+
+Diving into the data
+========================================================
+
+# GDP per Capita and Happiness
+
+### Hypothesis: The higher the GDP per Capita the higher the Score (happiness)
+
+- Positive Correlation between both varibles
+- Money is often associated with happiness
+- Financial Stability and Happiness
+
+
+```r
+ggplot(data = happiness, mapping = aes(x = Score, y = GDP_per_capita)) + 
+geom_point() +
+  labs(title = "Score and GDP per Capita", subtite = "Relationship between Score and GDP Per Capita",
+    x = "Score", y = "GDP per Capita")
+```
+
+![plot of chunk unnamed-chunk-11](Presentation-figure/unnamed-chunk-11-1.png)
+
+Defining Variables
+========================================================
+
+# Score
+
+-Sum of the results of all variables
+
+-The Higher the score the happier the country
+
+Summary
+========================================================
+- The higher the score of happiness on the data of the countries, the higher levels of absence of corruption was seen from the data.
+- Based from the data of the ranks of the countries, the top 5 countries were countries from Europe, while the last 5 countries were third world countries.
+- Based from the data on GDP per Capita and score, we see that the higher the GDP per Capita, the higher the score of happiness was seen. 
